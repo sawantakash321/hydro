@@ -1,0 +1,88 @@
+.orderbook {
+    .header,
+    .status {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #666666;
+    }
+    .asks {
+        height: 160px;
+        overflow-y: auto;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 15px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgb(0, 51, 102);
+            border-radius: 10px;
+        }
+    }
+    .bids {
+        min-height: 160px;
+        overflow-y: auto;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 15px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgb(0, 51, 102);
+            border-radius: 10px;
+        }
+    }
+    .ask {
+        cursor: pointer;
+    }
+    .bid {
+                cursor: pointer;
+
+        min-height: 32px;
+    }
+    &-amount{
+        position: relative;
+        &-value{
+            z-index: 2;
+        }
+    }
+    &-gray{
+        background-color: #f2f2f2
+    }
+    &-opacGray{
+        background: rgba(0, 102, 204, 0.1);
+        height: 32px;
+        line-height: 14px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-opacRed {
+        background: rgba(255, 51, 51, 0.1);
+    }
+    &-currency{
+        color: #666666;
+        font-size: 11px;
+    }
+    &-textBlue{
+        color: rgb(0, 102, 204)
+    }
+    &-textBlack{
+        color: rgb(0, 0, 0);
+    }
+        
+}
